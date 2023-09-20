@@ -115,9 +115,9 @@ export class Fake {
 
     let result: string;
     if (typeof params === 'string' && params.length === 0) {
-      result = String(fn());
+      result = fn();
     } else {
-      result = String(fn(params));
+      result = fn(params);
     }
 
     // Replace the found tag with the returned fake value
